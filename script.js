@@ -12,7 +12,7 @@ let centreL = l/2;
 function arc (obj) {
     ctx.fillStyle = obj.color;
     ctx.beginPath();
-    ctx.arc(obj.x, obj.y, obj.r || 5, 0, 2 * Math.PI);
+    ctx.arc(obj.x, obj.y, obj.r);
     ctx.fill();
     ctx.stroke();
     ctx.closePath();
