@@ -6,6 +6,18 @@ let h = window.innerHeight;
 let l = window.innerWidth;
 let centreH = h/2;
 let centreL = l/2;
+let player = {
+    name: name,
+    color: color,
+    x: x,
+    y: y,
+    score: score,
+    r: r,
+    aim:{
+        x: x,
+        y: y
+    }
+}
 
 
 
