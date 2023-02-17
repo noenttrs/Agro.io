@@ -1,11 +1,12 @@
 let canvas = document.getElementById('canvas');
-canvas.width = 10000;
-canvas.height = 10000;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 let ctx = canvas.getContext('2d');
 let h = window.innerHeight;
 let l = window.innerWidth;
 let centreH = h/2;
 let centreL = l/2;
+
 let player = {
     name: name,
     color: color,
@@ -18,6 +19,7 @@ let player = {
         y: y
     }
 }
+
 
 
 
