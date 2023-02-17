@@ -2,10 +2,6 @@ let canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let ctx = canvas.getContext('2d');
-let h = window.innerHeight;
-let l = window.innerWidth;
-let centreH = h/2;
-let centreL = l/2;
 
 let player = {
     name: name,
@@ -41,7 +37,7 @@ loop();
 
 canvas.addEventListener('mousemove', e => {
     player.aim = {
-        x: e.clientX - centreL,
-        y: e.clientY - centreH
+        x: e.clientX - player.x,
+        y: e.clientY - player.y
     }
 })
